@@ -7,10 +7,8 @@ class ContactModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(50))
     last_name = db.Column(db.String(50))
-    email = db.Column(db.String(50))
-    phone_number = db.Column(db.Integer)
-    # contacts = db.relationship("ContactBookModel", lazy="dynamic",
-    #                            cascade="all,delete")
+    email = db.Column(db.String(100))
+    phone_number = db.Column(db.String(50))
 
     def __init__(self, first_name, last_name, email, phone_number,):
         self.first_name = first_name

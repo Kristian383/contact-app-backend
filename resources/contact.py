@@ -20,7 +20,7 @@ class Contact(Resource):
                         help="This field cannot be left blank!"
                         )
     parser.add_argument('phone',
-                        type=int,
+                        type=str,
                         required=True,
                         help="This field cannot be left blank!"
                         )
@@ -53,12 +53,11 @@ class Contact(Resource):
 
         contact.first_name = data["first_name"]
         contact.last_name = data["last_name"]
-        contact.email = data["email"]
+        # contact.email = data["email"]
         contact.phone_number = data["phone"]
-
         try:
             contact.save_to_db()
-            return {"message": "Contact updated", "song": contact.json()}, 200
+            return {"message": "Contact updated", "contact": contact.json()}, 200
         except:
             return {"message": "An error occured updating the contact."}, 500
 
