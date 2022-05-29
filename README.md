@@ -1,7 +1,7 @@
 # contact-app-backend
  
  This is a simple CRUD phonebook app in the form of RESTApi + SPA(Single page application) <br />
-This repository is for backend
+This repository is for backend <br/>
 Frontend is visibile here:
  - for Vue: https://github.com/Kristian383/contact-app
  - for React: https://github.com/Kristian383/contact-app-react-front
