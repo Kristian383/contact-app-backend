@@ -9,7 +9,7 @@ Phonebook with the functions of entering, viewing, editing and deleting contacts
 Tech: 
 - database -> SQLAlchemy
 - REST API -> Python Flask
-- Frontend -> Vue 3 + SCSS
+- Frontend -> Vue 3 and React (2 separate projects) + SCSS
  
 ## Project setup
 ```
